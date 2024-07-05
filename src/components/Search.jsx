@@ -13,7 +13,7 @@ export default function Search({ foodData, setFoodData }) {
       setFoodData(data.results);
     }
     fetchFood();
-  }, []);
+  }, [query]);
   return (
     <div className={styles.searchContainer}>
       <input
